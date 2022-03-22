@@ -1,0 +1,209 @@
+@font-face {
+  font-family: "Sofia Pro";
+  src: local("Sofia Pro"), url(./Sofia_Pro_Black_Az.otf) format("opentype");
+}
+
+nav {
+  height: 4rem;
+  box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  padding: 1.5rem;
+}
+
+nav img {
+  height: 4rem;
+}
+
+footer {
+  height: 3rem;
+  display: flex;
+  padding: 3rem;
+  background-color: rgb(56, 62, 83);
+  justify-content: end;
+  align-items: center;
+  position: relative;
+}
+
+footer h4 {
+  color: #eee;
+  font-weight: 200;
+}
+
+.vh100 {
+  min-height: 80vh;
+  max-height: 150vh;
+  overflow: hidden;
+}
+
+.container {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 1rem;
+  overflow: hidden;
+}
+
+.hero {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+span {
+  color: #1d74ce;
+}
+
+.banner-section {
+  padding: 2rem;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.banner-section .form {
+  height: 22rem;
+  min-width: 300px;
+  width: 30%;
+  max-width: 400px;
+  box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 2rem;
+  background-color: white;
+  transform: scale(0.85) translateY(2rem);
+}
+
+.banner-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-section input:first-of-type {
+  margin-top: 0.7rem;
+}
+
+.banner-section input:not(.color-picker input) {
+  padding: 0.4rem 0;
+  border: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 1.2rem;
+  outline: none;
+  font-size: 1rem;
+}
+
+.banner-section .preview {
+  height: 30rem;
+  width: 50%;
+  box-shadow: 0px 10px 16px 13px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 2rem;
+  padding-top: 3rem;
+  background-color: white;
+  transform: scale(0.9);
+}
+
+.skew {
+  position: sticky;
+  height: 13rem;
+  width: 100vw;
+  background-color: #1d74ce;
+  background-repeat: repeat;
+  transform: skewY(-3deg) scale(4) translateY(0.6rem);
+  z-index: -10;
+}
+
+.color-picker {
+  z-index: 2;
+  margin: 1rem 0rem;
+}
+
+form button {
+  padding: 1rem;
+  border-radius: 5px;
+  color: white;
+  background-color: #1d74ce;
+  cursor: pointer;
+  font-weight: 900;
+  transition: background-color 0.2s;
+  border: none;
+}
+
+form button:hover {
+  background-color: #1963b3;
+}
+
+.preview {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.preview-bg {
+  width: 840px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.preview img {
+  height: 50%;
+  margin-bottom: 8px;
+  transform: translateY(10px);
+}
+
+.preview h3 {
+  transform: translateY(10px);
+  font-size: 1.6rem;
+  font-family: "Sofia Pro";
+}
+
+input[type="file"] {
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+.upload-logo {
+  height: 20px;
+}
+
+.disabled {
+  color: white;
+  background-color: #b6b6b6;
+  cursor: default;
+}
+
+.disabled:hover {
+  color: white;
+  background-color: #b6b6b6;
+  cursor: default;
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 922px) {
+  .mobile {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    z-index: 40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .container {
+    display: none;
+  }
+}
